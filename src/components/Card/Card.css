@@ -1,0 +1,34 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    margin: 10px;
+}
+.card--star {
+    height: 14px;
+    width: 14px;
+}
+.card--image {
+    border-radius: 10px;
+}
+.card--rating {
+    margin-top: .4em;
+}
+.card p {
+    margin: .2em 0;
+    font-size: .75rem;
+}
+
+.card--rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card--ratingtext-light {
+    color: #918E9B;
+}
+
+.card--price--bold {
+    font-weight: bold;
+}
