@@ -1,0 +1,22 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+.hero h1 {
+    font-size: 2.25rem;
+}
+
+.hero p {
+    width: 85%;
+}
+
+.hero--textblock {
+    width: 70%;
+    margin-left: 36px;
+}
+
+.hero--photo {
+    margin: 26px auto;
+    width:80vw;
+}
