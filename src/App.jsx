@@ -23,12 +23,15 @@ still be block elements, stacked vertically. We'll add styling later.
 function App() {
   const cards = data.map((card) => {
     return <Card 
+      key={card.id}
       img={card.coverImg} 
       rating={card.rating} 
       reviewCount={card.stats.reviewCount} 
       location={card.location} 
       title={card.title} 
-      price={card.price} /> 
+      price={card.price} 
+      openSpots={card.openSpots}
+      /> 
   })
   return (
     <>

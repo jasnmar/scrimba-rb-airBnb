@@ -5,8 +5,21 @@ import star from "../../assets/star.png"
 
 function Card(props) {
     const imgSrc = "/src/assets/" + props.img
+    let badgeText = ""
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.location=== "Online") {
+        badgeText = "ONLINE"
+    }
+
+        /*
+    Challenge:
+    1. Display the correct text in the badge based on the logic above
+    2. Only display the badge if badgeText has a value
+    */
     return (
         <div className="card">
+            {badgeText != "" && <div className="card-badge">{badgeText}</div>}
             <img className="card--image" src={imgSrc}></img>
             <div className="card--rating">
                 <img className="card--star" src={star}></img> 
