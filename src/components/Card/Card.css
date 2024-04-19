@@ -14,9 +14,10 @@
 .card--rating {
     margin-top: .4em;
 }
-.card p {
+.card p, .card h2 {
     margin: .2em 0;
     font-size: .75rem;
+    font-weight: 400;
 }
 
 .card--rating {
