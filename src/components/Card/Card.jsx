@@ -3,8 +3,7 @@ import "./Card.css"
 import star from "../../assets/star.png"
 
 
-function Card(item) {
-    const props = item.item
+function Card(props) {
     const imgSrc = "/src/assets/" + props.coverImg
     let badgeText = ""
     if (props.openSpots === 0) {
