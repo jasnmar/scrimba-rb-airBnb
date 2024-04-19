@@ -30,12 +30,13 @@ function App() {
       title={card.title} 
       price={card.price} /> 
   })
-  console.log(cards)
   return (
     <>
       <Navbar />
       <Hero />
-      {cards}
+      <section className='cards-list'>
+        {cards}
+      </section>
         
     </>
   )

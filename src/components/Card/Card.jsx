@@ -4,7 +4,6 @@ import star from "../../assets/star.png"
 
 
 function Card(props) {
-    console.log(props)
     const imgSrc = "/src/assets/" + props.img
     return (
         <div className="card">
