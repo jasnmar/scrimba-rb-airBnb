@@ -1,5 +1,7 @@
 import "./Card.css"
-//import katie from "../../assets/katie-zaferes.png"
+import katie from "../../assets/katie-zaferes.png"
+import bike from "../../assets/mountain-bike.png"
+import wed from "../../assets/wedding-photography.png"
 import star from "../../assets/star.png"
 
 
