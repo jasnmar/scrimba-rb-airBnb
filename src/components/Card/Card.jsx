@@ -6,16 +6,21 @@ import star from "../../assets/star.png"
 
 
 function Card(props) {
-    const imgSrc = "/src/assets/" + props.coverImg
+    let imgSrc
+    if(props.coverImg == "katie") {
+        imgSrc = katie
+    } else if (props.coverImg == "wedding") {
+        imgSrc = wed
+    } else {
+        imgSrc = bike
+    }
+    
     let badgeText = ""
     if (props.openSpots === 0) {
         badgeText = "SOLD OUT"
     } else if (props.location=== "Online") {
         badgeText = "ONLINE"
     }
-        /*
-    Challenge: Fix our component! 😱
-    */
     return (
         <div className="card">
             {badgeText != "" && <div className="card-badge">{badgeText}</div>}
